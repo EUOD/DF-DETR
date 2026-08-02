@@ -2,16 +2,16 @@
 
 # DF-DETR: Degradation-Aware Frequency-Enhanced DETR for End-to-End Underwater Object Detection
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
-[![Last Commit](https://img.shields.io/badge/last%20commit-March%202026-yellowgreen)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-orange)]()
+[![License](https://img.shields.io/github/license/EUOD/DF-DETR?color=green)](https://github.com/EUOD/DF-DETR/blob/HEAD/LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/EUOD/DF-DETR?color=yellowgreen)](https://github.com/EUOD/DF-DETR/commits)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-orange.svg)](https://github.com/EUOD/DF-DETR/pulls)
 
 
 </div>
 
 # Introduction
 
-This repository presents **WM-DETR**, a robust underwater object detection framework that integrates **wavelet-based frequency decomposition**, state-space modeling (Mamba), and sparse adaptive interaction.Underwater detection is severely affected by light attenuation, scattering noise, color distortion, low contrast, and small objects. WM-DETR addresses these challenges by decomposing visual features into frequency sub-bands and modeling them using dual-branch state-space representations.Our framework improves detection robustness by suppressing background noise while preserving fine structural details, achieving strong performance on challenging underwater benchmarks.
+This repository presents DF-DETR, a degradation-aware frequency-enhanced end-to-end underwater object detection framework built upon RT-DETR. Underwater object detection is severely affected by wavelength-dependent light attenuation, scattering noise, color distortion, nonuniform illumination, blurred boundaries, and small or low-contrast targets. DF-DETR addresses these challenges through a Degradation-Aware Frequency-Enhanced Hybrid Encoder (DFHE), which integrates two complementary modules: the Channel-Adaptive Spectral Module (CASM) and the Wavelet-Guided Degradation Purification module (WGDP). CASM performs adaptive Fourier-domain interaction across multiple backbone feature levels, enabling efficient global context modeling without introducing dense self-attention on high-resolution features. WGDP decomposes fused features into low- and high-frequency components, using stable low-frequency semantics to guide high-frequency purification.
 
 ![Alt Text](picture.png)
 ---
