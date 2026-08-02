@@ -2,7 +2,7 @@
 
 # DF-DETR: Degradation-Aware Frequency-Enhanced DETR for End-to-End Underwater Object Detection
 
-[![License](https://img.shields.io/github/license/EUOD/DF-DETR?color=green)](https://github.com/EUOD/DF-DETR/blob/HEAD/LICENSE)
+[![License: MIT](https://img.shields.io/github/license/EUOD/DF-DETR?color=green)](https://github.com/EUOD/DF-DETR/blob/HEAD/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/EUOD/DF-DETR?color=yellowgreen)](https://github.com/EUOD/DF-DETR/commits)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-orange.svg)](https://github.com/EUOD/DF-DETR/pulls)
 
