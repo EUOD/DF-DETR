@@ -1,6 +1,6 @@
 <div align="center">
 
-# WM-DETR: Dual-Branch Wavelet-Mamba and Sparse Attention for Robust Underwater Object Detection
+# DF-DETR: Degradation-Aware Frequency-Enhanced DETR for End-to-End Underwater Object Detection
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 [![Last Commit](https://img.shields.io/badge/last%20commit-March%202026-yellowgreen)]()
@@ -22,7 +22,8 @@ This repository presents **WM-DETR**, a robust underwater object detection frame
 
 ### Download Dataset
 #### (1) DUO dataset (https://github.com/chongweiliu/DUO)
-#### (2) RUOD dataset (https://github.com/dlut-dimt/RUOD))
+#### (2) UTDAC dataset (https://github.com/Ixiaohuihuihui/UTDAC)
+#### (3) RUOD dataset (https://github.com/dlut-dimt/RUOD))
 
 ### Dataset Structure
 
@@ -38,6 +39,15 @@ datasets/
 │   │   ├── train/
 │   │   └── val/
 │   └── DUO.yaml
+│
+├── UTDAC/
+│   ├── images/
+│   │   ├── train/
+│   │   └── val/
+│   ├── labels/
+│   │   ├── train/
+│   │   └── val/
+│   └── UTDAC.yaml
 │
 └── RUOD/
     ├── images/
@@ -61,24 +71,21 @@ nc: 10                                   # number of classes
 names: ['holothurian', 'boat', 'echinus', 'starfish', 'fish', 'corals', 'diver', 'cuttlefish', 'turtle', 'jellyfish']
 ```
 
-## 2、Pretrained Weights
-
-You can download the pretrained weight file **`rtdetr-r50.pt`** from Baidu Netdisk:
-
-- **Link**: [https://pan.baidu.com/s/1-yge3B-41eaUIiQOyxs0FQ](https://pan.baidu.com/s/1-yge3B-41eaUIiQOyxs0FQ)
-- **Extraction Code**: `PKGR`
-- 
-After downloading, please place the weight file in the appropriate directory before training or evaluation.
-
-## 3. Model Training
+## 2. Model Training
 
 ```bash
 # Basic training command (using default configuration)
-python3 ./train.py
+python ./train.py
 ```
-## 4. Model Validation
+## 3. Model Validation
 
 ```bash
 # Basic training command (using default configuration)
-python3 ./val.py
+python ./val.py
+```
+## 4. Model Detection
+
+```bash
+# Basic training command (using default configuration)
+python ./detect.py
 ```
